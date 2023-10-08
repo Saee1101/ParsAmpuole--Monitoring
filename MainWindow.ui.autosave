@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>1024</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true">#page{
+	border-image: url(:/resource/Image/Inspection Monitor-04-01-01.jpg);
+}
+</string>
+     </property>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>77</y>
+        <width>131</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Satoshi Variable</family>
+        <pointsize>18</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox {
+ padding-left:2px;
+	background-color: rgba(255, 255, 255,0%);
+	color: rgb(255, 255, 255);
+ }
+
+ QDoubleSpinBox::up-button {
+	border-image: url(:/resource/Image/Asset 1.png);
+
+     subcontrol-origin: border;
+     subcontrol-position: center right; /* position at the top right corner */
+height:60;
+     width: 30px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+     border-width: 1px;
+ }
+ QDoubleSpinBox::up-button::pressed{
+ padding-right:5px;
+height:55;
+     width: 25px;
+}
+ QDoubleSpinBox::down-button {
+	border-image: url(:/resource/Image/Asset 2.png);
+     subcontrol-origin: border;
+     subcontrol-position: center left; /* position at bottom right corner */
+height:60;
+     width: 30px;
+     border-width: 1px;
+     border-top-width: 0;
+ }
+ QDoubleSpinBox::down-button::pressed{
+ padding-left:5px;
+height:55;
+     width: 25px;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="decimals">
+       <number>2</number>
+      </property>
+      <property name="minimum">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="stepType">
+       <enum>QAbstractSpinBox::DefaultStepType</enum>
+      </property>
+      <property name="value">
+       <double>0.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>853</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Satoshi Variable</family>
+        <pointsize>20</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox {
+ padding-left:2px;
+	background-color: rgba(255, 255, 255,0%);
+	color: rgb(255, 255, 255);
+ }
+
+ QDoubleSpinBox::up-button {
+	border-image: url(:/resource/Image/Asset 1.png);
+
+     subcontrol-origin: border;
+     subcontrol-position: center right; /* position at the top right corner */
+height:60;
+     width: 30px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+     border-width: 1px;
+ }
+ QDoubleSpinBox::up-button::pressed{
+ padding-right:5px;
+height:55;
+     width: 25px;
+}
+ QDoubleSpinBox::down-button {
+	border-image: url(:/resource/Image/Asset 2.png);
+     subcontrol-origin: border;
+     subcontrol-position: center left; /* position at bottom right corner */
+height:60;
+     width: 30px;
+     border-width: 1px;
+     border-top-width: 0;
+ }
+ QDoubleSpinBox::down-button::pressed{
+ padding-left:5px;
+height:55;
+     width: 25px;
+}</string>
+      </property>
+      <property name="singleStep">
+       <double>0.010000000000000</double>
+      </property>
+      <property name="value">
+       <double>16.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="Button_TivanEX" name="btn_backtosetting">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>870</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#btn_backtosetting{
+	border-image: url(:/resource/Image/B.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_power">
+      <property name="geometry">
+       <rect>
+        <x>1091</x>
+        <y>105</y>
+        <width>95</width>
+        <height>95</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#btn_power{
+	border-image: url(:/resource/Image/System Control Off.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="Button_TivanEX" name="btn_save">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>900</y>
+        <width>75</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#btn_save {
+border-image: url(:/resource/Image/Asset 4.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="Button_TivanEX" name="btn_reset">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>900</y>
+        <width>75</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/resource/Image/Asset 6.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_models">
+      <property name="geometry">
+       <rect>
+        <x>656</x>
+        <y>170</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Satoshi Variable</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#lbl_models{
+ padding-left:20px;
+ padding-right:20;
+color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="lineWidth">
+       <number>3</number>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>190</y>
+        <width>581</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_D4"/>
+     </widget>
+     <widget class="QFrame" name="frame_reject">
+      <property name="geometry">
+       <rect>
+        <x>878</x>
+        <y>107</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/resource/Image/Reject Off.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_statistic">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>620</y>
+        <width>130</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Satoshi Variable</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comboBox_statistic{
+background-color: rgba(255, 255, 255,0%);
+	color: rgb(255, 255, 255);
+   border: 1px solid gray;
+    border-radius: 15px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+#comboBox_statistic::drop-down{
+	border-image: url(:/resource/Image/Asset 2.png);
+     width: 30px;
+     border-width: 1px;
+     border-top-width: 0;
+}
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Pie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bar</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>330</y>
+        <width>261</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="Camera_Layout"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>530</y>
+        <width>581</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_D5"/>
+     </widget>
+     <widget class="QComboBox" name="comboBox_camera">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>300</y>
+        <width>130</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Satoshi Variable</family>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comboBox_camera{
+background-color: rgba(255, 255, 255,0%);
+	color: rgb(255, 255, 255);
+   border: 1px solid gray;
+    border-radius: 15px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+#comboBox_camera::drop-down{
+	border-image: url(:/resource/Image/Asset 2.png);
+     width: 30px;
+     border-width: 1px;
+     border-top-width: 0;
+}
+#comboBox_camera:list Item{
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Cam1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cam2</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>650</y>
+        <width>331</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="Statistic_MonitorLayout"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Button_TivanEX</class>
+   <extends>QPushButton</extends>
+   <header>Button_TivanEX.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

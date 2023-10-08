@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/resource">
+        <file>Image/Accepted.png</file>
+        <file>Image/Asset 2.png</file>
+        <file>Image/Asset 3.png</file>
+        <file>Image/Main - Power Button 01 - 02.png</file>
+        <file>Image/Reject Off.png</file>
+        <file>Image/Reject On.png</file>
+        <file>Image/Rejected.png</file>
+        <file>Image/System Control Off.png</file>
+        <file>Image/System Control On.png</file>
+        <file>Image/Asset 8.png</file>
+        <file>Image/Asset 4.png</file>
+        <file>Image/Asset 6.png</file>
+        <file>Image/Asset 1.png</file>
+        <file>Image/B.png</file>
+        <file>Image/Inspection Monitor-04-01-01.jpg</file>
+    </qresource>
+</RCC>
